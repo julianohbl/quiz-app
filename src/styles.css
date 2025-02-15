@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .app {
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Limita a largura máxima do conteúdo */
+  }
+  
+  .quiz-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%; /* Garante que o card não ultrapasse a largura do contêiner */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .options input {
+    margin-right: 10px;
+  }
+
+  .correct-answers {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .correct-answers ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .correct-answers li {
+    background-color: #a5fa9d;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px; /* Limita a largura máxima do botão */
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .quiz-card {
+      padding: 15px;
+    }
+  
+    .options label {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
