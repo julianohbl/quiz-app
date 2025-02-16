@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { questions } from "../questions";
+import "../styles.css";
 
 const getRandomQuestion = () => {
   // Escolhe uma pergunta aleatória
